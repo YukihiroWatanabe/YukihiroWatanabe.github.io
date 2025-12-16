@@ -30,7 +30,7 @@ The difference in historical impact was not mathematical, but contextual.
 Nakano’s work appeared during the first AI winter, in a systems-theory journal, and outside the physics community.
 Hopfield’s paper arrived at precisely the moment when physicists were actively searching for biological applications of spin-glass theory, and it rapidly gained wide attention.
 
-As a result, the model became universally known as the “Hopfield network.”
+As a result, the model became universally known as the **“Hopfield network.”**
 
 Hopfield later received the Nobel Prize in Physics in 2024 for foundational contributions enabling machine learning with artificial neural networks.
 Nakano’s earlier work remains largely unrecognized outside Japan.
@@ -43,3 +43,34 @@ Hopfield, J. J. (1982). *Neural networks and physical systems with emergent coll
 [*Proceedings of the National Academy of Sciences*](https://doi.org/10.1073/pnas.79.8.2554)
 
 ---
+
+This is not a case of independent discovery.
+It is not a matter of minor precedence.
+
+It is the same equations, the same convergence proof, and the same storage-capacity result — published a full decade earlier.
+
+This episode illustrates how, in practice, scientific credit can be shaped as much by timing, community, language, and narrative as by mathematical and historical priority.
+
+Nakano (1972) introduced the model.
+History assigned the name — and the Nobel Prize — to Hopfield (1982).
+
+---
+
+Primary Reference
+
+Nakano, K. (1972).
+Associatron — A Model of Associative Memory.
+IEEE Transactions on Systems, Man, and Cybernetics, SMC-2(3), 380–388.
+https://doi.org/10.1109/TSMC.1972.4309131
+
+
+
+
+
+
+
+
+
+
+
+
