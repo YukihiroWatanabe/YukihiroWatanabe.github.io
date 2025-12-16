@@ -17,6 +17,12 @@ developed in Japan, focusing on pattern association.
 
 *Figure © C-side Laboratory, Yatsugatake / Yukihiro Watanabe (CC BY 4.0)*
 
+
+## Historical Note
+- [The True Origin of the Hopfield Network: Nakano (1972) vs Hopfield (1982)](nakano-vs-hopfield.md)
+
+
+
 ## How to read this site
 - Each page builds concepts visually
 - Diagrams are placed between explanations
