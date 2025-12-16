@@ -9,15 +9,18 @@ Associatron-based associative memory models,
 with diagrams, equations, and code.
 
 ## What is Associatron?
+
 Associatron is an early associative memory model
-developed in Japan, focusing on pattern association
-rather than deep layered learning.
+developed in Japan, focusing on pattern association.
+
+![Associatron overview](images/associatron_overview.png)
+
+*Figure © C-side Laboratory, Yatsugatake / Yukihiro Watanabe (CC BY 4.0)*
 
 ## How to read this site
 - Each page builds concepts visually
 - Diagrams are placed between explanations
 - Mathematical expressions are kept minimal and intuitive
-
 
 
 ## License
