@@ -56,7 +56,7 @@ History assigned the name — and the Nobel Prize — to Hopfield (1982).
 
 ---
 
-Primary Reference
+# Primary Reference #
 
 Nakano, K. (1972).
 Associatron — A Model of Associative Memory.
