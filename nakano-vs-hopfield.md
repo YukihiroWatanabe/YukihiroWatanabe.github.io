@@ -63,8 +63,48 @@ Associatron — A Model of Associative Memory.
 IEEE Transactions on Systems, Man, and Cybernetics, SMC-2(3), 380–388.
 https://doi.org/10.1109/TSMC.1972.4309131
 
+---
+
+# Key Original Passages (Nakano, 1972) #
+
+---
+
+# Section III. Learning Process (p. 383) #
+
+“The connection coefficient
+<i>T<sub>ij</sub></i>
+from the j-th neuron to the i-th neuron is determined by the following learning equation when several patterns are to be stored in the neural network simultaneously:
+
+<i>T<sub>ij</sub> = Σ<sub>m</sub> x<sub>im</sub> x<sub>jm</sub> (i ≠ j)</i>
+
+The self-connection coefficient
+<i>T<sub>ii</sub></i>
+is set to zero.”
+
+---
+
+# Section IV. Recalling Process (p. 384) #
+
+“It can be proved that the following scalar quantity
+<i>V</i>
+always decreases or remains unchanged in the recalling process:
+
+<i>V = −1/2 Σ<sub>i</sub> Σ<sub>j</sub> T<sub>ij</sub> x<sub>i</sub> x<sub>j</sub></i>
+
+Since <i>V</i> has a lower bound, the state of the network finally reaches one of the stable states.”
 
 
+---
+
+# Simulation Results (p. 386) #
+
+“It is seen that the maximum number of storable patterns
+<i>P<sub>max</sub></i>
+is approximately proportional to
+<i>N</i>,
+and
+<i>P<sub>max</sub> ≈ 0.14 N</i>
+is obtained as an average.”
 
 
 
