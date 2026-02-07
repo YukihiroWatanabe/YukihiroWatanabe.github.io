@@ -38,9 +38,9 @@ This site is not:
 
 ## Pages
 
-- [Historical Note: Nakano (1972) and Associative Memory as Dynamics](./historical-note/)
+- Historical Note: Nakano (1972) and Associative Memory as Dynamics  
+  https://yukihirowatanabe.github.io/historical-note/
 
----
 
 ## License
 
