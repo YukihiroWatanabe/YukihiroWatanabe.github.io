@@ -38,7 +38,9 @@ A canonical reference is:
 ## Pages
 
 
-- [Historical Note: Nakano (1972) and the lineage of associative-memory ideas](./nakano-vs-hopfield.html)
+## Pages
+
+- [Historical Note: Associative Memory Perspective](./historical-note/)
 
 
 ---
