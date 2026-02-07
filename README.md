@@ -38,7 +38,8 @@ A canonical reference is:
 ## Pages
 
 - Historical note: Nakano (1972) and the lineage of associative-memory ideas  
-  → `Historical Note: Nakano (1972) and Associative Memory as Dynamics`
+ - [Historical Note: Nakano (1972) and the lineage of associative-memory ideas](./nakano-vs-hopfield.html)
+
 
 ---
 
