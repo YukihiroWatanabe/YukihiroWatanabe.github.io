@@ -37,9 +37,6 @@ A canonical reference is:
 
 ## Pages
 
-
-## Pages
-
 - [Historical Note: Associative Memory Perspective](./historical-note/)
 
 
