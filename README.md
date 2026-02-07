@@ -42,16 +42,34 @@ A canonical reference is:
 
 ---
 
+---
+
 ## License
 
-Text and diagrams: **CC BY 4.0**  
-© C-side Laboratory, Yatsugatake / Yukihiro Watanabe
+This project is released under the MIT License.
 
-Code snippets: unless otherwise noted, MIT (recommended for reuse).
+Copyright © 2026 Yukihiro Watanabe
 
 ---
 
-## Contact / attribution
+## Development Note
 
-If reusing figures or text, keep the attribution line and link back to this repo.
+This project was developed through extensive iterative discussions with AI tools (ChatGPT and Grok).
+
+The process was not a one-way code generation workflow.  
+Many parts were refined through repeated trial, disagreement, correction, and redesign.
+
+The AI systems were used as thinking partners, while all architectural direction, integration decisions, and final judgments were made by the author.
+
+This repository reflects that collaborative and exploratory development process.
+
+---
+
+## Research Note
+
+This repository is a research and educational demonstration of associative memory dynamics (Nakano-style Associatron).
+
+External inputs (mouse / camera) are treated as **perturbations (initial conditions)**.  
+The recalled state emerges from internal competition and convergence, rather than from explicit commands.
+
 
