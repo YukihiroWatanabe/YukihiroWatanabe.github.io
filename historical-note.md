@@ -1,6 +1,4 @@
----
-title: "Historical Note: Nakano (1972) and Associative Memory as Dynamics"
-permalink: /historical-note/
+
 ---
 
 # Historical Note: Nakano (1972) and Associative Memory as Dynamics
