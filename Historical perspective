@@ -1,0 +1,89 @@
+---
+layout: default
+title: Historical Perspective on Associative Memory
+permalink: /historical-note/
+---
+
+# Historical Perspective on Associative Memory
+
+This note provides a historical context for associative memory research and clarifies the perspective behind the Nakano-style Associatron demonstrations in this repository.
+
+The purpose is not to compare models in terms of superiority, but to understand how different formulations describe the same fundamental phenomenon: **recall as a dynamical process**.
+
+---
+
+## Nakano (1972): Associatron
+
+Kaoru Nakano proposed the *Associatron* as a distributed associative memory system capable of reconstructing a stored pattern from partial input.
+
+Reference:
+
+Nakano, K. (1972).  
+“Associatron—A Model of Associative Memory.”  
+IEEE Transactions on Systems, Man, and Cybernetics.
+
+Key idea:
+
+- A partial cue does not directly specify the output.
+- The cue acts as an **initial condition**.
+- The system evolves internally toward a stable recalled state.
+
+---
+
+## Hopfield (1982): Energy-based formulation
+
+Hopfield later presented a neural network model in which associative recall is described as convergence toward stable states in an energy landscape.
+
+Reference:
+
+Hopfield, J. J. (1982).  
+“Neural networks and physical systems with emergent collective computational abilities.”  
+PNAS.
+
+This formulation made associative memory widely accessible by expressing the dynamics in physical and mathematical terms.
+
+---
+
+## Shared principle
+
+Despite different formulations, both approaches describe a common mechanism:
+
+- External input provides a **perturbation**
+- Internal states **compete and interact**
+- A stable pattern **emerges through convergence**
+
+In this view, recall is not a lookup operation, but a self-organizing process.
+
+---
+
+## Perspective of this project
+
+The work in this repository focuses on a particular interpretation of associative memory:
+
+- External signals are treated as **triggers**, not commands
+- Recall is allowed to be **slow, partial, and uncertain**
+- Memory is organized along an external time axis (“episode rooms”)
+- The final state is determined by **internal dynamics**, not by direct input mapping
+
+The goal is not higher accuracy or speed, but to explore a model closer to early human cognition, where recall emerges gradually rather than instantaneously.
+
+---
+
+## Note on terminology
+
+This project uses the term **Nakano-style Associatron** to emphasize the developmental and dynamical interpretation of associative memory.
+
+The intention is historical and conceptual clarification, not a claim of priority or superiority over later models.
+
+---
+
+## References
+
+Nakano, K. (1972). Associatron—A Model of Associative Memory. IEEE Trans. SMC.  
+Hopfield, J. J. (1982). Neural networks and physical systems with emergent collective computational abilities. PNAS.
+
+
+
+
+
+
