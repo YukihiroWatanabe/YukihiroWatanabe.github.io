@@ -1,88 +1,90 @@
 ---
-layout: default
-title: Historical Perspective on Associative Memory
+title: "Historical Note: Nakano (1972) and Associative Memory as Dynamics"
 permalink: /historical-note/
 ---
 
-# Historical Perspective on Associative Memory
+# Historical Note: Nakano (1972) and Associative Memory as Dynamics
 
-This note provides a historical context for associative memory research and clarifies the perspective behind the Nakano-style Associatron demonstrations in this repository.
+This note frames associative memory as *a dynamical process*:
 
-The purpose is not to compare models in terms of superiority, but to understand how different formulations describe the same fundamental phenomenon: **recall as a dynamical process**.
+**cue injection → context competition → convergence (recall)**
 
----
-
-## Nakano (1972): Associatron
-
-Kaoru Nakano proposed the *Associatron* as a distributed associative memory system capable of reconstructing a stored pattern from partial input.
-
-Reference:
-
-Nakano, K. (1972).  
-“Associatron—A Model of Associative Memory.”  
-IEEE Transactions on Systems, Man, and Cybernetics.
-
-Key idea:
-
-- A partial cue does not directly specify the output.
-- The cue acts as an **initial condition**.
-- The system evolves internally toward a stable recalled state.
+The goal is not to argue “who invented what,” but to keep attention on *mechanism* and *reproducible demonstrations*.
 
 ---
 
-## Hopfield (1982): Energy-based formulation
+## 1) The perspective used here
 
-Hopfield later presented a neural network model in which associative recall is described as convergence toward stable states in an energy landscape.
+Associative memory can be described in two very different ways:
 
-Reference:
+- **Lookup framing**: memory is “retrieved” like a database record.
+- **Dynamics framing**: memory emerges as a stable state after internal competition and convergence.
 
-Hopfield, J. J. (1982).  
-“Neural networks and physical systems with emergent collective computational abilities.”  
-PNAS.
-
-This formulation made associative memory widely accessible by expressing the dynamics in physical and mathematical terms.
+This project takes the **dynamics framing** seriously and tries to keep demos small enough to inspect directly.
 
 ---
 
-## Shared principle
+## 2) Where Nakano (1972) fits
 
-Despite different formulations, both approaches describe a common mechanism:
+Nakano’s “Associatron” (1972) is a canonical early reference for pattern association / pattern completion:
 
-- External input provides a **perturbation**
-- Internal states **compete and interact**
-- A stable pattern **emerges through convergence**
+- store patterns
+- reconstruct a whole from a part (content-addressable recall)
 
-In this view, recall is not a lookup operation, but a self-organizing process.
+The important point for this repository is not label or fame, but that the idea naturally leads to:
 
----
-
-## Perspective of this project
-
-The work in this repository focuses on a particular interpretation of associative memory:
-
-- External signals are treated as **triggers**, not commands
-- Recall is allowed to be **slow, partial, and uncertain**
-- Memory is organized along an external time axis (“episode rooms”)
-- The final state is determined by **internal dynamics**, not by direct input mapping
-
-The goal is not higher accuracy or speed, but to explore a model closer to early human cognition, where recall emerges gradually rather than instantaneously.
+- partial cues
+- competition among candidates
+- convergence toward a stable recalled state
 
 ---
 
-## Note on terminology
+## 3) Relationship to later associative-memory models
 
-This project uses the term **Nakano-style Associatron** to emphasize the developmental and dynamical interpretation of associative memory.
+Later associative-memory models (including well-known energy-based formulations) also support pattern completion behavior.
 
-The intention is historical and conceptual clarification, not a claim of priority or superiority over later models.
+In this repository, they are treated as part of a broader lineage of “associative recall by convergence.”
+This note avoids turning that lineage into a ranking contest.
+
+---
+
+## 4) What is new in this work (the actual focus)
+
+This repository explores a specific extension of associative recall demos:
+
+### A) External input as perturbation, not command
+Mouse strokes or camera signals are treated as *initial conditions* (cue injection).
+They do not specify which memory must be recalled.
+
+### B) “Episode rooms” as an external time axis
+Memory is organized into multiple “rooms” (age / era buckets).
+A cue does not search a single store; it triggers **competition across rooms**.
+
+### C) Recall is allowed to be slow, incomplete, and developmental
+A fast, perfect completion is not the target.
+The demos intentionally allow behavior that looks closer to early human cognition:
+uncertain, hesitant, sometimes wrong, sometimes delayed.
 
 ---
 
-## References
+## 5) Development background (why the design looks like this)
 
-Nakano, K. (1972). Associatron—A Model of Associative Memory. IEEE Trans. SMC.  
-Hopfield, J. J. (1982). Neural networks and physical systems with emergent collective computational abilities. PNAS.
+The design evolved through repeated challenge from multiple angles:
+
+- AI tools (ChatGPT and Grok): disagreement, correction, redesign.
+- Non-technical everyday feedback: “external fixed concepts feel wrong,” “instant recall feels wrong,” “it should be more like a baby learning.”
+- Practical engineering feedback: code structure and implementation concerns.
+
+These pressures forced simplification and made the demos more explicit and inspectable.
+
+All conceptual direction, system architecture, and final decisions were made by Yukihiro Watanabe.
 
 ---
+
+## 6) Links
+
+- Back to home: `/`
+
 
 
 
