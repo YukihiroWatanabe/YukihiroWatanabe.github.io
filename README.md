@@ -55,30 +55,17 @@ Copyright © 2026 Yukihiro Watanabe
 
 ## Development Background
 
-This project was developed through an extended iterative process involving multiple perspectives.
+This project was developed through an extended iterative process involving multiple perspectives.The system design was explored through intensive discussions with AI tools (ChatGPT and Grok), often involving disagreement, correction, and redesign rather than straightforward code generation.In addition to AI-assisted development, the design was repeatedly challenged by feedback from outside the technical domain:A non-technical, everyday human perspective questioned assumptions such as:reliance on predefined external concepts,  
+immediate recall behavior,  
+and the expectation that the system should respond instantly rather than develop gradually.
 
-The system design was explored through intensive discussions with AI tools (ChatGPT and Grok), often involving disagreement, correction, and redesign rather than straightforward code generation.
+This led to the idea that the system should behave more like early human cognition — slower, incomplete, and developmental, “like a baby learning.”Practical engineering feedback from system development staff pointed out implementation issues, structure problems, and code-level concerns, forcing continuous refinement and simplification.Yukihiro Watanabe has been engaged in Associatron research since 2014, and it is undeniable that the dramatic leap in research outcomes from 2025 onward was made possible by the evolutionary advances in large language models (LLMs).Rather than following a fixed theoretical model, the architecture evolved through continuous challenge from:AI reasoning partners,  
+non-technical human intuition,  
+and practical engineering constraints.
 
-In addition to AI-assisted development, the design was repeatedly challenged by feedback from outside the technical domain:
+All conceptual direction, system architecture, and final decisions were made by Yukihiro Watanabe.The current implementation reflects a human-driven design process shaped by persistent questioning and cross-disciplinary feedback.
 
-- A non-technical, everyday human perspective questioned assumptions such as:
-  - reliance on predefined external concepts,
-  - immediate recall behavior,
-  - and the expectation that the system should respond instantly rather than develop gradually.
 
-  This led to the idea that the system should behave more like early human cognition — slower, incomplete, and developmental, “like a baby learning.”
-
-- Practical engineering feedback from system development staff pointed out implementation issues, structure problems, and code-level concerns, forcing continuous refinement and simplification.
-
-Rather than following a fixed theoretical model, the architecture evolved through continuous challenge from:
-
-- AI reasoning partners,
-- non-technical human intuition,
-- and practical engineering constraints.
-
-All conceptual direction, system architecture, and final decisions were made by Yukihiro Watanabe.
-
-The current implementation reflects a human-driven design process shaped by persistent questioning and cross-disciplinary feedback.
 
 ---
 
