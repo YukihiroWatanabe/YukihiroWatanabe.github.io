@@ -78,6 +78,21 @@ The current implementation reflects a human-driven design process shaped by pers
 
 
 ---
+## What is new in this work?
+
+This project explores associative memory not as a fast pattern completion mechanism, but as a developmental and context-dependent cognitive process.
+
+The key ideas are:
+
+- External input is treated as a **perturbation (initial condition)** rather than a command.
+- Recall is not immediate lookup, but an **emergent result of internal competition and convergence**.
+- Memory is organized along an external time axis (“episode rooms”), allowing distant contexts to compete.
+- The system is intentionally allowed to be **slow, incomplete, and uncertain**, reflecting early human cognition rather than optimized machine response.
+
+The focus of this work is not higher accuracy or larger models, but a shift in perspective:
+from instantaneous prediction to internally driven recall dynamics.
+
+---
 
 ## Research Note
 
