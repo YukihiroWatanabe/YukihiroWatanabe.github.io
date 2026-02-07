@@ -1,3 +1,7 @@
+## Live Site
+
+https://yukihirowatanabe.github.io
+
 # YukihiroWatanabe.github.io
 
 Visual explanations of Nakano-style Associatron and related associative-memory dynamics: cue → competition → convergence (recall), with diagrams and small runnable demos.
