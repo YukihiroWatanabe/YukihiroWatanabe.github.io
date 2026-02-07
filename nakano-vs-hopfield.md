@@ -1,110 +1,82 @@
 
-# **The True Origin of the Hopfield Network: Nakano (1972) vs Hopfield (1982)** #
+# Historical Note: Nakano (1972) and Associative Memory as Dynamics
 
-In 1972, Kaoru Nakano of the Tokyo Institute of Technology published a complete recurrent neural network model for associative memory in [*IEEE Transactions on Systems, Man, and Cybernetics* (SMC-2, pp. 380–388)](https://doi.org/10.1109/TSMC.1972.4309131)
+This note is a calm, source-first overview of early associative-memory ideas,
+centered on **Kaoru Nakano’s “Associatron” (1972)**.
 
-The paper, **“Associatron — A Model of Associative Memory,**” already contained all of the core elements that later became known as the Hopfield network:
-
-● A fully interconnected recurrent network with binary (±1) neurons
-● A Hebbian outer-product learning rule
-
-<i>T<sub>ij</sub> = Σ<sub>m</sub> x<sub>im</sub> x<sub>jm</sub> (i ≠ j), T<sub>ii</sub> = 0</i>
-
-● An explicit energy (Lyapunov) function
-
-<i>V = −1/2 Σ<sub>i</sub> Σ<sub>j</sub> T<sub>ij</sub> x<sub>i</sub> x<sub>j</sub></i>
-
-●　A mathematical proof that the energy monotonically decreases and is bounded below, guaranteeing convergence to stable stored patterns
-
-●　Computer simulations showing a storage capacity of approximately 0.14𝑁, remarkably close to the theoretical limit 0.138𝑁 derived more than a decade later
+The goal is not to rank models, but to clarify:
+- what problem each work was addressing
+- what the core mechanism is (in plain language)
+- which references can be cited cleanly
 
 ---
 
-Ten years later, in 1982, John J. Hopfield published an essentially identical model in Proceedings of the National Academy of Sciences (PNAS), reframing the same mathematics using the language of spin-glass physics from statistical mechanics.
+## 1. Nakano’s Associatron (1972): content-addressable reconstruction
 
-At the level of equations and dynamical behavior, the two models are the same.
-The only genuinely new theoretical results appeared later (1985–1987), when Amit, Gutfreund, and Sompolinsky rigorously derived the storage capacity limit using replica methods — a limit Nakano had already reached empirically in 1972.
+Nakano described an associative memory model that can:
+- store patterns (distributed representation)
+- reconstruct a full pattern from a partial cue
 
-The difference in historical impact was not mathematical, but contextual.
+A canonical bibliographic entry is:
 
-Nakano’s work appeared during the first AI winter, in a systems-theory journal, and outside the physics community.
-Hopfield’s paper arrived at precisely the moment when physicists were actively searching for biological applications of spin-glass theory, and it rapidly gained wide attention.
+- K. Nakano, “Associatron—A Model of Associative Memory,” IEEE Transactions on Systems, Man, and Cybernetics, 1972.
 
-As a result, the model became universally known as the **“Hopfield network.”**
+(See DBLP / CiNii for the bibliographic record.)
 
-Hopfield later received the Nobel Prize in Physics in 2024 for foundational contributions enabling machine learning with artificial neural networks.
-Nakano’s earlier work remains largely unrecognized outside Japan.
-
-
-Nakano, K. (1972). *Associatron — A Model of Associative Memory.*  
-[*IEEE Transactions on Systems, Man, and Cybernetics*](https://doi.org/10.1109/TSMC.1972.4309131)
-
-Hopfield, J. J. (1982). *Neural networks and physical systems with emergent collective computational abilities.*  
-[*Proceedings of the National Academy of Sciences*](https://doi.org/10.1073/pnas.79.8.2554)
+Key idea (plain language):
+- A partial cue is not a “query string.”
+- It is an **initial condition** that triggers internal convergence.
 
 ---
 
-This is not a case of independent discovery.
-It is not a matter of minor precedence.
+## 2. Hopfield (1982): energy-style formulation of associative recall
 
-It is the same equations, the same convergence proof, and the same storage-capacity result — published a full decade earlier.
+In 1982, Hopfield presented a neural-network model with emergent computational
+abilities, including content-addressable memory described via state-space flow
+and stable attractors.
 
-This episode illustrates how, in practice, scientific credit can be shaped as much by timing, community, language, and narrative as by mathematical and historical priority.
+Canonical references:
+- J. J. Hopfield, “Neural networks and physical systems with emergent collective computational abilities,” PNAS, 1982.
 
-Nakano (1972) introduced the model.
-History assigned the name — and the Nobel Prize — to Hopfield (1982).
-
----
-
-# Primary Reference #
-
-Nakano, K. (1972).
-Associatron — A Model of Associative Memory.
-IEEE Transactions on Systems, Man, and Cybernetics, SMC-2(3), 380–388.
-https://doi.org/10.1109/TSMC.1972.4309131
+This is historically important because it connected:
+- associative recall
+- stability / attractors
+- a physics-friendly description of network dynamics
 
 ---
 
-# Key Original Passages (Nakano, 1972) #
+## 3. Practical viewpoint: “recall” is convergence, not lookup
+
+Across many associative-memory formulations, a shared practical viewpoint is:
+
+- A cue is injected (often partial / noisy).
+- Candidates compete.
+- A stable state emerges (recall).
+
+That is why small demos can treat external signals (mouse, camera, etc.) as:
+- **perturbations / initial conditions**
+not as commands specifying the final state.
 
 ---
 
-# Section III. Learning Process (p. 383) #
+## 4. Suggested citation style (minimal, stable)
 
-“The connection coefficient
-<i>T<sub>ij</sub></i>
-from the j-th neuron to the i-th neuron is determined by the following learning equation when several patterns are to be stored in the neural network simultaneously:
+When a page needs a clean historical anchor, cite:
+- Nakano (1972) for “Associatron” (distributed associative memory, recall from part)
+- Hopfield (1982) for “energy / attractor style explanation” and PNAS reference
 
-<i>T<sub>ij</sub> = Σ<sub>m</sub> x<sub>im</sub> x<sub>jm</sub> (i ≠ j)</i>
-
-The self-connection coefficient
-<i>T<sub>ii</sub></i>
-is set to zero.”
-
----
-
-# Section IV. Recalling Process (p. 384) #
-
-“It can be proved that the following scalar quantity
-<i>V</i>
-always decreases or remains unchanged in the recalling process:
-
-<i>V = −1/2 Σ<sub>i</sub> Σ<sub>j</sub> T<sub>ij</sub> x<sub>i</sub> x<sub>j</sub></i>
-
-Since <i>V</i> has a lower bound, the state of the network finally reaches one of the stable states.”
-
+Avoid claims that require subjective judgment (e.g., “the true origin” framing).
+Keep it:
+- “X proposed … in year …”
+- “Y later described … in year …”
+- “Mechanistically, both can be read as …”
 
 ---
 
-# Simulation Results (p. 386) #
+## References
 
-“It is seen that the maximum number of storable patterns
-<i>P<sub>max</sub></i>
-is approximately proportional to
-<i>N</i>,
-and
-<i>P<sub>max</sub> ≈ 0.14 N</i>
-is obtained as an average.”
+- K. Nakano, “Associatron—A Model of Associative Memory,” IEEE Trans. SMC, 1972.
+- J. J. Hopfield, “Neural networks and physical systems with emergent collective computational abilities,” PNAS, 1982.
 
 
 
